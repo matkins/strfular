@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
 
-  map.root :controller => :pages, :action => :show, :id => 'home'
+  map.root :controller => :home, :action => :index
 
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
