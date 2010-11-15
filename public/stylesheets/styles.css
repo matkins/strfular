@@ -1,0 +1,30 @@
+body {
+	background:#333;
+	font-family:"Palatino Linotype", "Book Antiqua", "Palatino", serif;
+}
+#wrapper {
+	width:500px;
+	margin:auto;
+	text-align:center;
+}
+
+h1 {
+	color:white;
+	
+}
+
+#box {
+	background:#C085C6;
+	padding:60px 0px 40px;
+}
+
+#wrapper input{
+	font-family:"courier new" monospace;
+	width:300px;
+	text-align:center;
+	font-size: 22px;
+}
+
+#wrapper p{
+	font-size:32px;
+}
