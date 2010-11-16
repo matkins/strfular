@@ -1119,3 +1119,51 @@ Rendering template within layouts/application
 Rendering home/index
 Completed in 105ms (View: 104, DB: 0) | 200 OK [http://localhost/]
 >>>>>>> 4a8e149e5b146c8f4f139a30f3b67c40ecd6743f
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-16 18:43:12) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 99ms (View: 97, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-16 18:44:24) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-16 18:45:11) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 96ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-16 18:46:13) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-16 18:46:48) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-16 18:47:58) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-16 18:48:22) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-16 18:55:04) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]

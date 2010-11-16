@@ -3,7 +3,7 @@ body {
 	font-family:"Palatino Linotype", "Book Antiqua", "Palatino", serif;
 }
 #wrapper {
-	width:600px;
+	width:1000px;
 	margin:auto;
 	text-align:center;
 }
@@ -16,7 +16,7 @@ h1 {
 #box {
 	background:#C085C6;
 	padding:60px 0px 40px;
-	min-height: 200px;
+	min-height: 150px;
 }
 
 #wrapper input{
@@ -32,18 +32,24 @@ h1 {
 }
 
 #help {
-  margin-top:10px;
+  	margin-top:10px;
 	background:#FFF3A7;
-	padding:20px;
+	padding:20px 0px;
 	text-align:left;
+	font-size:16px;
 }
 #help p {
-  font-size:16px;
+	margin:0;
+	padding:0;
+	font-size:16px;
+	font-weight:bold;
 }
 #help dl{
 	float:left;
-	width:280px;
+	width:230px;
 	margin:0;
+	border-right: solid #CFC68A 1px;
+	padding:0px 5px;
 }
 
 #help dt{
@@ -57,6 +63,9 @@ h1 {
 
 #help dd{
   float:left;
-	width:230px;
+	width:200px;
 	margin-left:5px;
+}
+br.clear {
+	clear:both;
 }

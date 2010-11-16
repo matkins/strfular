@@ -21,8 +21,8 @@
         Strftime.convert();
     })
   #help
-    %p Dates
     %dl
+      %p Dates
       %dt %a
       %dd The abbreviated weekday name ("Sun")
       %dt %A
@@ -31,16 +31,22 @@
       %dd The abbreviated month name ("Jan")
       %dt %B
       %dd The full month name ("January")
+      %dt %C
+      %dd The century number (00..99)
       %dt %d
       %dd Day of the month (01..31)
       %dt %e
       %dd Day of the month without a leading zero (1..31)
+      %dt %h
+      %dd The same as %b
       %dt %j
       %dd Day of the year (001..366)
       %dt %m
       %dd Month of the year (01..12)
       %dt %u
       %dd Day of the week (Monday is 1, 1..7)
+    %dl
+      %br
       %dt %U
       %dd Week number of the current year, starting with the first Sunday as the first day of the first week (00..53)
       %dt %W
@@ -53,8 +59,8 @@
       %dd Year without a century (00..99)
       %dt %Y
       %dd Year with century
-    %p Times
     %dl  
+      %p Times
       %dt %H
       %dd Hour of the day, 24-hour clock (00..23)
       %dt %I
@@ -67,8 +73,6 @@
       %dd Lower case Meridian indicator ("am"  or  "pm")
       %dt %S
       %dd Second of the minute (00..60)
-      %dt %T
-      %dd Current time (as H:M:S)
       %dt %x
       %dd Preferred representation for the date alone, no time
       %dt %X
@@ -77,35 +81,31 @@
       %dd Time zone name
       %dt %z
       %dd Numerical time zone
-    %p Misc.
-    %dl  
+    %dl
+      %p Formatted dates and times
       %dt %c
       %dd The preferred local date and time representation
+      %dt %D
+      %dd The same as m/d/y
       %dt %n
       %dd New line character
+      %dt %r
+      %dd The time with AM and PM, (same as I:M:S p)"
+      %dt %T
+      %dd Current time (same as H:M:S)
       %dt %%
       %dd Literal "%" character
+    %dl
+      %p Misc.
+      %dt %n
+      %dd New line character
+      %dt %t
+      %dd Tab character
+      %dt %%
+      %dd Literal "%" character
+    %br.clear
     
 
 
 -#
-  %p="%c - preferred date and time representation for the current locale"
-  %p="%C - century number (the year divided by 100 and truncated to an integer, range 00 to 99)"
-
-
-  %p="%D - same as m/d/y"
-
-  %p="%e - day of the month as a decimal number, a single digit is preceded by a space (range ' 1' to '31')"
-  %p="%g - like G, but without the century"
-  %p="%G - The 4-digit year corresponding to the ISO week number"
-  %p="%h - same as b"
-
-  %p="%r - time in a.m. and p.m. notation equal to I:M:S p"
-
-  %p="%R - time in 24 hour notation equal to H:M"
-
-  %p="%t - tab character"
-
-  %p="%T - current time, equal to H:M:S"
-
   %p="%V - The ISO 8601:1988 week number of the current year as a decimal number, range 01 to 53, where week 1 is the first week that has at least 4 days in the current year, and with Monday as the first day of the week."
