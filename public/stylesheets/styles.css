@@ -3,7 +3,7 @@ body {
 	font-family:"Palatino Linotype", "Book Antiqua", "Palatino", serif;
 }
 #wrapper {
-	width:500px;
+	width:600px;
 	margin:auto;
 	text-align:center;
 }
@@ -16,6 +16,7 @@ h1 {
 #box {
 	background:#C085C6;
 	padding:60px 0px 40px;
+	min-height: 200px;
 }
 
 #wrapper input{
@@ -27,4 +28,35 @@ h1 {
 
 #wrapper p{
 	font-size:32px;
+	padding:0px 20px;
+}
+
+#help {
+  margin-top:10px;
+	background:#FFF3A7;
+	padding:20px;
+	text-align:left;
+}
+#help p {
+  font-size:16px;
+}
+#help dl{
+	float:left;
+	width:280px;
+	margin:0;
+}
+
+#help dt{
+	margin:0;
+	width:20px;
+	font-family:"courier new" monospace;
+	font-weight:bold;
+	float:left;
+	clear:both;
+}
+
+#help dd{
+  float:left;
+	width:230px;
+	margin-left:5px;
 }
