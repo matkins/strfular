@@ -11,7 +11,7 @@
       Strftime.convert();
     });
 #wrapper
-  %h1 STRFTIME
+  %h1 STRFULAR
   #box
     %form#format_form{:action => '#'}
       =text_field_tag :format, "%d/%m/%Y"
@@ -20,3 +20,92 @@
     new Form.Observer('format_form', 0.3, function(form, value){
         Strftime.convert();
     })
+  #help
+    %p Dates
+    %dl
+      %dt %a
+      %dd The abbreviated weekday name ("Sun")
+      %dt %A
+      %dd The full weekday name ("Sunday")
+      %dt %b
+      %dd The abbreviated month name ("Jan")
+      %dt %B
+      %dd The full month name ("January")
+      %dt %d
+      %dd Day of the month (01..31)
+      %dt %e
+      %dd Day of the month without a leading zero (1..31)
+      %dt %j
+      %dd Day of the year (001..366)
+      %dt %m
+      %dd Month of the year (01..12)
+      %dt %u
+      %dd Day of the week (Monday is 1, 1..7)
+      %dt %U
+      %dd Week number of the current year, starting with the first Sunday as the first day of the first week (00..53)
+      %dt %W
+      %dd Week number of the current year, starting with the first Monday as the first day of the first week (00..53)
+      %dt %w
+      %dd Day of the week (Sunday is 0, 0..6)
+      %dt %x
+      %dd Preferred representation for the date alone, no time
+      %dt %y
+      %dd Year without a century (00..99)
+      %dt %Y
+      %dd Year with century
+    %p Times
+    %dl  
+      %dt %H
+      %dd Hour of the day, 24-hour clock (00..23)
+      %dt %I
+      %dd Hour of the day, 12-hour clock (01..12)
+      %dt %M
+      %dd Minute of the hour (00..59)
+      %dt %p
+      %dd Meridian indicator ("AM"  or  "PM")
+      %dt %P
+      %dd Lower case Meridian indicator ("am"  or  "pm")
+      %dt %S
+      %dd Second of the minute (00..60)
+      %dt %T
+      %dd Current time (as H:M:S)
+      %dt %x
+      %dd Preferred representation for the date alone, no time
+      %dt %X
+      %dd Preferred representation for the time alone, no date
+      %dt %Z
+      %dd Time zone name
+      %dt %z
+      %dd Numerical time zone
+    %p Misc.
+    %dl  
+      %dt %c
+      %dd The preferred local date and time representation
+      %dt %n
+      %dd New line character
+      %dt %%
+      %dd Literal "%" character
+    
+
+
+-#
+  %p="%c - preferred date and time representation for the current locale"
+  %p="%C - century number (the year divided by 100 and truncated to an integer, range 00 to 99)"
+
+
+  %p="%D - same as m/d/y"
+
+  %p="%e - day of the month as a decimal number, a single digit is preceded by a space (range ' 1' to '31')"
+  %p="%g - like G, but without the century"
+  %p="%G - The 4-digit year corresponding to the ISO week number"
+  %p="%h - same as b"
+
+  %p="%r - time in a.m. and p.m. notation equal to I:M:S p"
+
+  %p="%R - time in 24 hour notation equal to H:M"
+
+  %p="%t - tab character"
+
+  %p="%T - current time, equal to H:M:S"
+
+  %p="%V - The ISO 8601:1988 week number of the current year as a decimal number, range 01 to 53, where week 1 is the first week that has at least 4 days in the current year, and with Monday as the first day of the week."
