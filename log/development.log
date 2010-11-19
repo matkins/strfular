@@ -1167,3 +1167,1078 @@ Processing HomeController#index (for 127.0.0.1 at 2010-11-16 18:55:04) [GET]
 Rendering template within layouts/application
 Rendering home/index
 Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:23:27) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 76ms (View: 74, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:23:54) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (undefined method `date_time_select' for #<ActionView::Base:0x214d064>) on line #17 of app/views/home/index.html.haml:
+14:   %h1 STRFULAR
+15:   #box
+16:     %form#format_form{:action => '#'}
+17:       =date_time_select("date_time")
+18:       =text_field_tag :format, "%d/%m/%Y"
+19:     %p#result result
+20:   :javascript
+
+    app/views/home/index.html.haml:17:in `_run_haml_app47views47home47index46html46haml'
+    haml (3.0.15) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.15) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (48.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:24:04) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #17 of app/views/home/index.html.haml:
+14:   %h1 STRFULAR
+15:   #box
+16:     %form#format_form{:action => '#'}
+17:       =datetime_select("date_time")
+18:       =text_field_tag :format, "%d/%m/%Y"
+19:     %p#result result
+20:   :javascript
+
+    app/views/home/index.html.haml:17:in `datetime_select'
+    app/views/home/index.html.haml:17:in `_run_haml_app47views47home47index46html46haml'
+    haml (3.0.15) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.15) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:24:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 121ms (View: 120, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:25:19) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 37ms (View: 35, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:26:16) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:26:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:27:38) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #19 of app/views/home/index.html.haml:
+16:     %form#format_form{:action => '#'}
+17:       #date_time_select
+18:         =datetime_select("strfular","date_time",:order => [:day, :month, :year, :hour, :minute, :second])
+19:         =select_second
+20:       =text_field_tag :format, "%d/%m/%Y"
+21:     %p#result result
+22:   :javascript
+
+    app/views/home/index.html.haml:19:in `select_second'
+    app/views/home/index.html.haml:19:in `_run_haml_app47views47home47index46html46haml'
+    haml (3.0.15) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.15) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (39.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:29:53) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 32ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:30:07) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 28ms (View: 27, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:31:35) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 162ms (View: 160, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:35:01) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (undefined method `google_javascripts' for #<ActionView::Base:0x2464694>) on line #7 of app/views/layouts/application.html.haml:
+4:     %title= "Strftime"
+5:     %meta{"http-equiv"=>"Content-type", :content=>"text/html;charset=UTF-8"}
+6:     =stylesheet_link_tag "styles"
+7:     = google_javascripts :jquery, :jqueryui
+8:     =javascript_include_tag :defaults
+9:     =javascript_include_tag "strftime.js"
+10:     =yield :javascript
+
+    app/views/layouts/application.html.haml:7:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.15) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.15) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (37.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:41:26) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (undefined method `google_javascripts' for #<ActionView::Base:0x2210c94>) on line #7 of app/views/layouts/application.html.haml:
+4:     %title= "Strftime"
+5:     %meta{"http-equiv"=>"Content-type", :content=>"text/html;charset=UTF-8"}
+6:     =stylesheet_link_tag "styles"
+7:     = google_javascripts :jquery
+8:     =javascript_include_tag :defaults
+9:     =javascript_include_tag "strftime.js"
+10:     =yield :javascript
+
+    app/views/layouts/application.html.haml:7:in `_run_haml_app47views47layouts47application46html46haml'
+    haml (3.0.15) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.15) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (86.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:41:34) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 44ms (View: 43, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:42:18) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 172ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:42:53) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:43:16) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:44:48) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:49:18) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 99ms (View: 97, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:50:23) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 38ms (View: 33, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:51:22) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 29ms (View: 27, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:51:57) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 28ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:57:55) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 34ms (View: 33, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 12:58:06) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 117ms (View: 111, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 13:00:48) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:00:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:00:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:00:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_75_cccccc_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:00:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_e6e6e6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:00:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-icons_222222_256x240.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:00:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_55_fbf9ee_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:00:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_75_cccccc_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:00:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_e6e6e6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:00:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-icons_222222_256x240.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:00:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_55_fbf9ee_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:00:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_dadada_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:00:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_dadada_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:02:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:02:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 13:07:44) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 111ms (View: 110, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:07:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:07:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_ffffff_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:07:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_75_cccccc_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:07:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-icons_222222_256x240.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:07:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_e6e6e6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:07:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_55_fbf9ee_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:07:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_dadada_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:07:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_75_cccccc_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:07:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-icons_222222_256x240.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:07:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_e6e6e6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:07:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_55_fbf9ee_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:07:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_75_dadada_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:07:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:07:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 13:09:17) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 13:12:05) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 13:13:22) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 19ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 13:13:55) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 13:14:08) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 13:17:48) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:17:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:17:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:17:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:17:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:17:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-icons_ffffff_256x240.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:17:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:17:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:17:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:17:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-icons_ffffff_256x240.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:17:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 13:18:00) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:18:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:18:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:18:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:18:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-icons_ffffff_256x240.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:18:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:18:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:18:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:18:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:18:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-icons_ffffff_256x240.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:18:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:18:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:18:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:18:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:18:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 13:19:15) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 104ms (View: 102, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:19:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:19:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:19:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:19:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-icons_ffffff_256x240.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:19:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:19:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:19:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:19:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-icons_ffffff_256x240.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:19:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:19:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:19:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:19:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 13:20:11) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:20:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:20:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:20:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:20:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-icons_ffffff_256x240.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:20:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:20:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:20:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:20:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:20:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:20:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-icons_ffffff_256x240.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:20:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:20:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:20:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:20:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-17 13:21:08) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:21:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 13:21:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 09:17:58) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 147ms (View: 146, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 09:18:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 09:18:16) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 09:18:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 09:18:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 09:18:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 09:18:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 09:18:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 09:18:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 09:18:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 09:20:12) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 09:20:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 09:20:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 09:20:53) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 09:21:01) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 09:21:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-19 09:21:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  haml (3.0.15) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-11-19 09:22:19) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]

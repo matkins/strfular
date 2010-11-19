@@ -1,25 +1,35 @@
 -content_for :javascript do
+  =javascript_include_tag 'timepicker.js'
   :javascript
     var Strftime = {
       convert: function() {
-        var today = new Date();
-        format = document.getElementById('format').value;
-        document.getElementById('result').innerHTML = today.strftime(format);
+        var date = new Date($('#date_picker').val());
+        $('#result').html(date.strftime($('#format').val()));
+      },
+      init_datepicker: function() {
+        $('#date_picker').datepicker({
+          duration: '',
+          dateFormat: 'mm/dd/yy',
+          showTime: true,
+          constrainInput: false,
+          stepMinutes: 15,
+          stepHours: 1,
+          altTimeField: '',
+          time24h: true
+        });
       }
     }
-    document.observe("dom:loaded", function() {
+    $(document).ready(function(){
+      Strftime.init_datepicker();
       Strftime.convert();
     });
 #wrapper
   %h1 STRFULAR
   #box
-    %form#format_form{:action => '#'}
-      =text_field_tag :format, "%d/%m/%Y"
+    =text_field_tag :date_time, Time.now.strftime("%m/%d/%Y %H:%m"), :id => "date_picker", :onchange => "Strftime.convert();"
+    %br
+    =text_field_tag :format, "%d/%m/%Y, %I:%m%P", :onkeyup => "Strftime.convert();"
     %p#result result
-  :javascript
-    new Form.Observer('format_form', 0.3, function(form, value){
-        Strftime.convert();
-    })
   #help
     %dl
       %p Dates
