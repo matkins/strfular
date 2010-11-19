@@ -69,3 +69,10 @@ h1 {
 br.clear {
 	clear:both;
 }
+#footer{
+	margin:10px 0px 30px;
+	color:#fff;
+}
+#footer a{
+	color:#fff;
+}
