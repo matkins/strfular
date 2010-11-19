@@ -3,32 +3,17 @@
   :javascript
     var Strftime = {
       convert: function() {
-        var date = new Date($('#date_picker').val());
+        var date = new Date();
         $('#result').html(date.strftime($('#format').val()));
-      },
-      init_datepicker: function() {
-        $('#date_picker').datepicker({
-          duration: '',
-          dateFormat: 'mm/dd/yy',
-          showTime: true,
-          constrainInput: false,
-          stepMinutes: 15,
-          stepHours: 1,
-          altTimeField: '',
-          time24h: true
-        });
       }
     }
     $(document).ready(function(){
-      Strftime.init_datepicker();
       Strftime.convert();
     });
 #wrapper
   %h1 STRFULAR
   #box
-    =text_field_tag :date_time, Time.now.strftime("%m/%d/%Y %H:%m"), :id => "date_picker", :onchange => "Strftime.convert();"
-    %br
-    =text_field_tag :format, "%d/%m/%Y, %I:%m%P", :onkeyup => "Strftime.convert();"
+    =text_field_tag :format, "%d/%m/%Y, %I:%M%P", :onkeyup => "Strftime.convert();"
     %p#result result
   #help
     %dl
@@ -91,8 +76,8 @@
       %dd Time zone name
       %dt %z
       %dd Numerical time zone
-    %dl
-      %p Formatted dates and times
+    %dl.right
+      %p Miscellaneous
       %dt %c
       %dd The preferred local date and time representation
       %dt %D
@@ -105,8 +90,6 @@
       %dd Current time (same as H:M:S)
       %dt %%
       %dd Literal "%" character
-    %dl
-      %p Misc.
       %dt %n
       %dd New line character
       %dt %t
