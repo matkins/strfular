@@ -1,25 +1,20 @@
 -content_for :javascript do
+  =javascript_include_tag 'timepicker.js'
   :javascript
     var Strftime = {
       convert: function() {
-        var today = new Date();
-        format = document.getElementById('format').value;
-        document.getElementById('result').innerHTML = today.strftime(format);
+        var date = new Date();
+        $('#result').html(date.strftime($('#format').val()));
       }
     }
-    document.observe("dom:loaded", function() {
+    $(document).ready(function(){
       Strftime.convert();
     });
 #wrapper
   %h1 STRFULAR
   #box
-    %form#format_form{:action => '#'}      
-      =text_field_tag :format, "%d/%m/%Y"
+    =text_field_tag :format, "%d/%m/%Y, %I:%M%P", :onkeyup => "Strftime.convert();"
     %p#result result
-  :javascript
-    new Form.Observer('format_form', 0.3, function(form, value){
-        Strftime.convert();
-    })
   #help
     %dl
       %p Dates
@@ -81,8 +76,8 @@
       %dd Time zone name
       %dt %z
       %dd Numerical time zone
-    %dl
-      %p Formatted dates and times
+    %dl.right
+      %p Miscellaneous
       %dt %c
       %dd The preferred local date and time representation
       %dt %D
@@ -95,8 +90,6 @@
       %dd Current time (same as H:M:S)
       %dt %%
       %dd Literal "%" character
-    %dl
-      %p Misc.
       %dt %n
       %dd New line character
       %dt %t

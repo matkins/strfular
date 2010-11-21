@@ -18,17 +18,20 @@ h1 {
 	padding:60px 0px 40px;
 	min-height: 150px;
 }
-
 #wrapper input{
 	font-family:"courier new" monospace;
-	width:300px;
-	text-align:center;
+	width:250px;
 	font-size: 22px;
+	text-align:center;
 }
 
 #wrapper p{
 	font-size:32px;
 	padding:0px 20px;
+}
+
+label {
+  font-weight:bold;
 }
 
 #help {
@@ -49,7 +52,11 @@ h1 {
 	width:230px;
 	margin:0;
 	border-right: solid #CFC68A 1px;
-	padding:0px 5px;
+	padding:0px 9px;
+}
+
+#help dl.right{
+  border:none;
 }
 
 #help dt{
