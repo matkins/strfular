@@ -56,12 +56,13 @@ label {
 }
 
 #help dl.col1{
-  width:256px;
+  width:259px;
 }
 #help dl.col2{
+  width:241px;
 }
 #help dl.col3{
-  width:199px;
+  width:193px;
 }
 #help dl.col4{
   border:none;
@@ -69,7 +70,7 @@ label {
 
 #help dt{
 	margin:0;
-	width:20px;
+	width:25px;
 	font-family:"courier new" monospace;
 	font-weight:bold;
 	float:left;
