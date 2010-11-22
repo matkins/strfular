@@ -55,7 +55,15 @@ label {
 	padding:0px 9px;
 }
 
-#help dl.right{
+#help dl.col1{
+  width:256px;
+}
+#help dl.col2{
+}
+#help dl.col3{
+  width:199px;
+}
+#help dl.col4{
   border:none;
 }
 
@@ -70,7 +78,6 @@ label {
 
 #help dd{
   float:left;
-	width:200px;
 	margin-left:5px;
 }
 br.clear {

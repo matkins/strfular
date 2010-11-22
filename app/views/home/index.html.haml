@@ -16,7 +16,7 @@
     =text_field_tag :format, "%d/%m/%Y, %I:%M%P", :onkeyup => "Strftime.convert();"
     %p#result result
   #help
-    %dl
+    %dl.col1
       %dt Day
       %dt %a
       %dd short weekday name, e.g. Sun
@@ -39,7 +39,7 @@
       %dd week, week begin Sun
       %dt %W
       %dd week, week begin Mon
-    %dl
+    %dl.col2
       %dt Month
       %dt %b
       %dd short month name, e.g. Jan
@@ -58,7 +58,7 @@
       %dd year (00..99)
       %dt %Y
       %dd year, including century      
-    %dl
+    %dl.col3
       %dt Time
       %dt %H
       %dd hour (00..23)
@@ -80,7 +80,7 @@
       %dt %Z
       %dd time zone name
 
-    %dl
+    %dl.col4
       %dt Macros
       %dt %c
       %dd preferred date/time format
