@@ -20,7 +20,7 @@ h1 {
 }
 #wrapper input{
 	font-family:"courier new" monospace;
-	width:250px;
+	width:300px;
 	font-size: 22px;
 	text-align:center;
 }
@@ -77,9 +77,19 @@ label {
 	clear:both;
 }
 
+
+a#clear {
+	color:#000;
+	text-decoration:none;
+}
 #help dd{
   float:left;
 	margin-left:5px;
+}
+
+#help a{
+	color:#000;
+	text-decoration:none;
 }
 br.clear {
 	clear:both;
