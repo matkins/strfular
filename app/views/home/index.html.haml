@@ -17,90 +17,96 @@
     %p#result result
   #help
     %dl
-      %p Dates
+      %dt Day
       %dt %a
-      %dd The abbreviated weekday name ("Sun")
+      %dd short weekday name, e.g. Sun
       %dt %A
-      %dd The full weekday name ("Sunday")
-      %dt %b
-      %dd The abbreviated month name ("Jan")
-      %dt %B
-      %dd The full month name ("January")
-      %dt %C
-      %dd The century number (00..99)
+      %dd full weekday name, e.g. Sunday
       %dt %d
-      %dd Day of the month (01..31)
+      %dd day of the month (01..31)
       %dt %e
-      %dd Day of the month without a leading zero (1..31)
-      %dt %h
-      %dd The same as %b
+      %dd day of the month (' 1'..'31')
       %dt %j
-      %dd Day of the year (001..366)
-      %dt %m
-      %dd Month of the year (01..12)
+      %dd day of the year (001..366)
       %dt %u
-      %dd Day of the week (Monday is 1, 1..7)
-    %dl
-      %br
-      %dt %U
-      %dd Week number of the current year, starting with the first Sunday as the first day of the first week (00..53)
-      %dt %W
-      %dd Week number of the current year, starting with the first Monday as the first day of the first week (00..53)
+      %dd weekday with Mon = 1, (1..7)
       %dt %w
-      %dd Day of the week (Sunday is 0, 0..6)
-      %dt %x
-      %dd Preferred representation for the date alone, no time
+      %dd weekday with Sun = 0, (0..6)
+            
+      
+      %dt Week
+      %dt %U
+      %dd week, week begin Sun
+      %dt %W
+      %dd week, week begin Mon
+    %dl
+      %dt Month
+      %dt %b
+      %dd short month name, e.g. Jan
+      %dt %B
+      %dd full month name, e.g. January
+      %dt %h
+      %dd same as b
+      %dt %m
+      %dd month (01..12)
+      %dt Year
+      %dt %C
+      %dd century number (00 to 99)
+      %dt %G
+      %dd 4-digit year, e.g. 2010
       %dt %y
-      %dd Year without a century (00..99)
+      %dd year (00..99)
       %dt %Y
-      %dd Year with century
-    %dl  
-      %p Times
+      %dd year, including century      
+    %dl
+      %dt Time
       %dt %H
-      %dd Hour of the day, 24-hour clock (00..23)
+      %dd hour (00..23)
       %dt %I
-      %dd Hour of the day, 12-hour clock (01..12)
+      %dd hour (01..12)
       %dt %M
-      %dd Minute of the hour (00..59)
-      %dt %p
-      %dd Meridian indicator ("AM"  or  "PM")
-      %dt %P
-      %dd Lower case Meridian indicator ("am"  or  "pm")
+      %dd minute (0..60)
       %dt %S
-      %dd Second of the minute (00..60)
-      %dt %x
-      %dd Preferred representation for the date alone, no time
-      %dt %X
-      %dd Preferred representation for the time alone, no date
-      %dt %Z
-      %dd Time zone name
+      %dd second (0..60)
+
+      %dt AM/PM
+      %dt %p
+      %dd 'AM' or 'PM'
+      %dt %P
+      %dd 'am' or 'pm'
+      %dt Zone
       %dt %z
-      %dd Numerical time zone
-    %dl.right
-      %p Miscellaneous
+      %dd numerical time zone
+      %dt %Z
+      %dd time zone name
+
+    %dl
+      %dt Macros
       %dt %c
-      %dd The preferred local date and time representation
+      %dd preferred date/time format
       %dt %D
-      %dd The same as m/d/y
-      %dt %n
-      %dd New line character
+      %dd same as m/d/y
       %dt %r
-      %dd The time with AM and PM, (same as I:M:S p)"
+      %dd same as I:M:S p
+      %dt %R
+      %dd same as H:M
       %dt %T
-      %dd Current time (same as H:M:S)
-      %dt %%
-      %dd Literal "%" character
+      %dd current time as H:M:S
+      %dt %x
+      %dd preferred date format
+      %dt %X
+      %dd preferred time format
+      
+      
+      %dt Misc.
       %dt %n
-      %dd New line character
+      %dd newline character
       %dt %t
-      %dd Tab character
+      %dd tab character
       %dt %%
-      %dd Literal "%" character
+      %dd a literal `%' character
     %br.clear
   #footer
-    ="Inspired by #{link_to("Rubular", "http://www.rubular.com")} and #{link_to("strfti.me", "http://www.strfti.me")}, powered by #{link_to("strftime for Javascript", "http://hacks.bluesmoon.info/strftime/index.html")} and built by #{link_to("Matt Atkins", "http://www.twitter.com/matkins")} of #{link_to("Yoomee", "http://www.yoomee.com")}."
+    ="Inspired by #{link_to("Rubular", "http://www.rubular.com")}, powered by #{link_to("strftime for Javascript", "http://hacks.bluesmoon.info/strftime/index.html")} and built by #{link_to("Matt Atkins", "http://www.twitter.com/matkins")} of #{link_to("Yoomee", "http://www.yoomee.com")}."
     
 
-
--#
-  %p="%V - The ISO 8601:1988 week number of the current year as a decimal number, range 01 to 53, where week 1 is the first week that has at least 4 days in the current year, and with Monday as the first day of the week."
