@@ -18,7 +18,7 @@
   %h1 STRFULAR
   #box
     =text_field_tag :format, "%d/%m/%Y, %I:%M%P", :onkeyup => "Strftime.convert();"
-    =link_to_function("X", "$('#format').val('')", :id => "clear")
+    =link_to_function("X", "$('#format').val('');Strftime.convert()", :id => "clear")
     %p#result result
   #help
     %dl.col1
