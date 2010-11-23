@@ -10,17 +10,33 @@ body {
 
 h1 {
 	color:white;
-	
+	font-size:50px;
+	margin:20px 0 0;
 }
 
 #box {
 	background:#C085C6;
-	padding:60px 0px 40px;
+	padding:40px 0px 10px;
 	min-height: 150px;
 }
+
+#format_field {
+	position:relative;
+	width:320px;
+	margin:0 auto;
+}
+
+#delete {
+	background: url('/images/clear.png') no-repeat left top #ffffff;
+	position:absolute;
+	top:8px;
+	right:30px;
+	width:19px;
+	height:19px;
+}
+
 #wrapper input{
 	font-family:"courier new" monospace;
-	width:300px;
 	font-size: 22px;
 	text-align:center;
 }
@@ -37,7 +53,7 @@ label {
 #help {
   	margin-top:10px;
 	background:#FFF3A7;
-	padding:20px 0px;
+	padding:20px 0px 10px;
 	text-align:left;
 	font-size:16px;
 }
@@ -47,30 +63,48 @@ label {
 	font-size:16px;
 	font-weight:bold;
 }
-#help dl{
+#help .col{
 	float:left;
-	width:230px;
+	width:238px;
 	margin:0;
 	border-right: solid #CFC68A 1px;
-	padding:0px 9px;
+	padding:0px 5px;
+	min-height: 264px;
 }
 
-#help dl.col1{
-  width:259px;
+#help #col1{
+  width:267px;
 }
-#help dl.col2{
-  width:241px;
+#help #col2{
+  width:249px;
 }
-#help dl.col3{
-  width:193px;
+#help #col3{
+  width:201px;
 }
-#help dl.col4{
+#help #col4{
   border:none;
 }
 
-#help dt{
+#help #col1 a{
+  width:259px;
+}
+#help #col2 a{
+  width:241px;
+}
+#help #col3 a{
+  width:193px;
+}
+
+#help span.subhead {
+	font-weight:bold;
+	width:100%;
+	float:left;
+}
+
+#help span.title{
 	margin:0;
 	width:25px;
+	font-size:17px;
 	font-family:"courier new" monospace;
 	font-weight:bold;
 	float:left;
@@ -82,7 +116,7 @@ a#clear {
 	color:#000;
 	text-decoration:none;
 }
-#help dd{
+#help span.desc{
   float:left;
 	margin-left:5px;
 }
@@ -90,7 +124,31 @@ a#clear {
 #help a{
 	color:#000;
 	text-decoration:none;
+	display:block;
+	float:left;
+	width:232px;
+	padding:0px 4px;
 }
+#help a:hover{
+	background-color:#CFC68A;
+}
+
+#help #symbols{
+	float:left;
+	font-weight:bold;
+}
+
+#help #symbols .links {
+	margin-left:10px;
+}
+#help #symbols a {
+	float:left;
+	width:auto;
+	margin:0px;
+	padding:0px 10px;
+}
+
+
 br.clear {
 	clear:both;
 }

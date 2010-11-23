@@ -27,7 +27,12 @@ module ApplicationHelper
     EOF
   end
   
-  def format_string(title, description)
-    "<a href='#' onclick=\"Strftime.addToFormat('#{title}')\"><dt>#{title}</dt><dd>#{description}</dd></a>"
+  def render_format(title, description)
+    "<a href='#help' onclick=\"Strftime.addToFormat('#{title}')\"><span class='title'>#{title}</span><span class='desc'>#{description}</span></a>"
+  end
+  
+  def render_symbol(symbol)
+    symbol_rep = (symbol == " " ? "space" : symbol)
+    "<a href='#help' onclick=\"Strftime.addToFormat('#{symbol}')\">#{symbol_rep}</a>"
   end
 end

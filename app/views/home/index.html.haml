@@ -13,63 +13,83 @@
     }
     $(document).ready(function(){
       Strftime.convert();
+      $('.format_field').hover(
+        function () {
+          $('#delete').show();
+        }, 
+        function () {
+          $('#delete').hide();
+        }
+      );
     });
 #wrapper
   %h1 STRFULAR
   #box
-    =text_field_tag :format, "%d/%m/%Y, %I:%M%P", :onkeyup => "Strftime.convert();"
-    =link_to_function("X", "$('#format').val('');Strftime.convert()", :id => "clear")
+    #format_field
+      =text_field_tag :format, "%d/%m/%Y, %I:%M%P", :onkeyup => "Strftime.convert();", :class=> "format_field"
+      =link_to_function("", "$('#format').val('');Strftime.convert()", :id => "delete", :class=> "format_field")
     %p#result result
   #help
-    %dl.col1
-      %dt Day
-      =format_string("%a","short weekday name, e.g. Sun")
-      =format_string("%A","full weekday name, e.g. Sunday")
-      =format_string("%d","day of the month (01..31)")
-      =format_string("%e"," day of the month (' 1'..'31')")
-      =format_string("%j"," day of the year (001..366)")
-      =format_string("%u"," weekday with Mon = 1, (1..7)")
-      =format_string("%w"," weekday with Sun = 0, (0..6)")
-      %dt Week
-      =format_string("%U"," week, week begin Sun")
-      =format_string("%W"," week, week begin Mon")
-    %dl.col2
-      %dt Month
-      =format_string("%b"," short month name, e.g. Jan")
-      =format_string("%B"," full month name, e.g. January")
-      =format_string("%h"," same as b")
-      =format_string("%m"," month (01..12)")
-      %dt Year
-      =format_string("%C"," century number (00 to 99)")
-      =format_string("%G"," 4-digit year, e.g. 2010")
-      =format_string("%y"," year (00..99)")
-      =format_string("%Y"," year, including century")
-    %dl.col3
-      %dt Time
-      =format_string("%H"," hour (00..23)")
-      =format_string("%I"," hour (01..12)")
-      =format_string("%M"," minute (0..60)")
-      =format_string("%S"," second (0..60)")
-      %dt AM/PM
-      =format_string("%p","'AM' or 'PM'")
-      =format_string("%P","'am' or 'pm'")
-      %dt Zone
-      =format_string("%z","numerical time zone")
-      =format_string("%Z","time zone name")
+    .col#col1
+      %span.subhead Day
+      =render_format("%a","short weekday name, e.g. Sun")
+      =render_format("%A","full weekday name, e.g. Sunday")
+      =render_format("%d","day of the month (01..31)")
+      =render_format("%e"," day of the month (' 1'..'31')")
+      =render_format("%j"," day of the year (001..366)")
+      =render_format("%u"," weekday with Mon = 1, (1..7)")
+      =render_format("%w"," weekday with Sun = 0, (0..6)")
+      %span.subhead Week
+      =render_format("%U"," week, week begin Sun")
+      =render_format("%W"," week, week begin Mon")
+      %br
+    .col#col2
+      %span.subhead Month
+      =render_format("%b"," short month name, e.g. Jan")
+      =render_format("%B"," full month name, e.g. January")
+      =render_format("%h"," same as b")
+      =render_format("%m"," month (01..12)")
+      %span.subhead Year
+      =render_format("%C"," century number (00 to 99)")
+      =render_format("%G"," 4-digit year, e.g. 2010")
+      =render_format("%y"," year (00..99)")
+      =render_format("%Y"," year, including century")
+      #symbols
+        %span.subhead Symbols
+        .links
+          =render_symbol(" ")
+          =render_symbol(":")
+          =render_symbol(";")
+          =render_symbol(",")
+          =render_symbol("-")
+          =render_symbol("=")
+          =render_symbol("*")
+    .col#col3
+      %span.subhead Time
+      =render_format("%H"," hour (00..23)")
+      =render_format("%I"," hour (01..12)")
+      =render_format("%M"," minute (0..60)")
+      =render_format("%S"," second (0..60)")
+      %span.subhead AM/PM
+      =render_format("%p","'AM' or 'PM'")
+      =render_format("%P","'am' or 'pm'")
+      %span.subhead Zone
+      =render_format("%z","numerical time zone")
+      =render_format("%Z","time zone name")
 
-    %dl.col4
-      %dt Macros
-      =format_string("%c"," preferred date/time format")
-      =format_string("%D"," same as m/d/y")
-      =format_string("%r"," same as I:M:S p")
-      =format_string("%R"," same as H:M")
-      =format_string("%T"," current time as H:M:S")
-      =format_string("%x"," preferred date format")
-      =format_string("%X"," preferred time format")
-      %dt Misc.
-      =format_string("%n"," newline character")
-      =format_string("%t"," tab character")
-      =format_string("%%"," a literal `%' character")
+    .col#col4
+      %span.subhead Macros
+      =render_format("%c"," preferred date/time format")
+      =render_format("%D"," same as m/d/y")
+      =render_format("%r"," same as I:M:S p")
+      =render_format("%R"," same as H:M")
+      =render_format("%T"," current time as H:M:S")
+      =render_format("%x"," preferred date format")
+      =render_format("%X"," preferred time format")
+      %span.subhead Misc.
+      =render_format("%n"," newline character")
+      =render_format("%t"," tab character")
+      =render_format("%%"," a literal `%' character")
     %br.clear
   #footer
     ="Inspired by #{link_to("Rubular", "http://www.rubular.com")}, powered by #{link_to("strftime for Javascript", "http://hacks.bluesmoon.info/strftime/index.html")} and built by #{link_to("Matt Atkins", "http://www.twitter.com/matkins")} of #{link_to("Yoomee", "http://www.yoomee.com")}."
