@@ -33,6 +33,7 @@ h1 {
 	right:30px;
 	width:19px;
 	height:19px;
+	display:none;
 }
 
 #wrapper input{
